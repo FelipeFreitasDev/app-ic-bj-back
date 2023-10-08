@@ -72,4 +72,5 @@ const offset = Number((page * limit) - limit);
         res.status(500).json(err);
     }
 });
+
 module.exports = router
