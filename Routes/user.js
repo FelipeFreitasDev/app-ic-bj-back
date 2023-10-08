@@ -1,5 +1,5 @@
 const User = require("../Models/User");
-const { veirfyToken, verifyTokenAndAdmin, verifyTokenAndAuthorization } = require("./verifyToken");
+const { verifyToken, verifyTokenAndAdmin, verifyTokenAndAuthorization } = require("./verifyToken");
 const CryptoJS = require("crypto-js");
 const router = require("express").Router();
 
@@ -72,3 +72,4 @@ const offset = Number((page * limit) - limit);
         res.status(500).json(err);
     }
 });
+module.exports = router
